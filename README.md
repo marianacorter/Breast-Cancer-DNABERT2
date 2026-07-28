@@ -242,3 +242,9 @@ The final model was evaluated using the test dataset. Performance metrics, confu
 ## Notes
 
 The extracted DNA sequences correspond to the reference genome sequence surrounding each variant. The alternate allele is not inserted into the sequence because allele information was unavailable in the ClinVar summary file. Consequently, the model learns from the genomic context rather than the specific nucleotide change.
+
+## References
+
+1. Magics-Lab. (2024). GitHub - MAGICS-LAB/DNABERT_2: [ICLR 2024] DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome. GitHub. https://github.com/MAGICS-LAB/DNABERT_2
+   
+2. Ji, Y., Zhou, Z., Liu, H., & Davuluri, R. V. (2021). DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome. Bioinformatics (Oxford, England), 37(15), 2112–2120. https://doi.org/10.1093/bioinformatics/btab083 
