@@ -18,9 +18,9 @@ Breast cancer variants were obtained from the ClinVar database, filtered accordi
 
 Before running the preprocessing pipeline, install the following software:
 
-- **Docker Desktop** (recommended)
+- Docker Desktop
 
-At least **10 GB of free disk space** is recommended to store the Docker image, reference genome, ClinVar dataset, and generated output files.
+At least 10 GB of free disk space is recommended to store the Docker image, reference genome, ClinVar dataset, and generated output files.
 
 ### Input Files
 
@@ -95,8 +95,8 @@ The dataset was generated from the ClinVar `variant_summary.txt` file.
 
 Filtering criteria included:
 
-- Human genome assembly: **GRCh38**
-- Variant type: **Single Nucleotide Variants (SNVs)**
+- Human genome assembly: GRCh38
+- Variant type: Single Nucleotide Variants (SNVs)
 - Breast cancer-related phenotypes
 - Clinical significance:
   - Pathogenic
@@ -167,7 +167,7 @@ These files are then used by the `train_DNABERT2.ipynb` notebook for model train
 
 ### Environment Setup
 
-The `train_DNABERT2.ipynb` notebook was developed and tested using **Google Colab** with GPU acceleration.
+The `train_DNABERT2.ipynb` notebook was developed and tested using Google Colab with GPU.
 
 ### 1. Enable GPU
 
@@ -241,4 +241,4 @@ The final model was evaluated using the test dataset. Performance metrics, confu
 
 ## Notes
 
-The extracted DNA sequences correspond to the **reference genome sequence** surrounding each variant. The alternate allele is not inserted into the sequence because allele information was unavailable in the ClinVar summary file. Consequently, the model learns from the genomic context rather than the specific nucleotide change.
+The extracted DNA sequences correspond to the reference genome sequence surrounding each variant. The alternate allele is not inserted into the sequence because allele information was unavailable in the ClinVar summary file. Consequently, the model learns from the genomic context rather than the specific nucleotide change.
